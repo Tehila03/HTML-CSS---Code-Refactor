@@ -1,1 +1,2 @@
-# HTML CSS - Code Refactor
+# Horiseon Marketing Home Page
+**HTML CSS - Code Refactor**
