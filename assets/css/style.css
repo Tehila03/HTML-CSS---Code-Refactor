@@ -1,16 +1,19 @@
-/* Universal selector defines box sizing, margin and padding properties for all elements. */
+/*This is universal and applies to all*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/* Defines backgound color property for body element and it's descendants */
+/*This applies to the body*/
+
 body {
     background-color: #d9dcd6;
 }
 
-/* Sets padding, font, and color properties for header element and it's descendants. */
+/*This section is for the header*/
+
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,36 +21,16 @@ header {
     color: #ffffff;
 }
 
-/* Defines display and font size properties for all h1 elements. */
-h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* Defines color for a specific h1 descendant. */
-h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-/* Defines margins and font size for all h2 elements */
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* Defines margins and font size for all h2 elements */
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Sets font-size for all h4 elements. */
-h4 {
-    font-size: 20px;
-}
-
-/* Defines margin, padding, display, and font properties for the navigation bar. */
-nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -55,36 +38,31 @@ nav {
     font-size: 20px;
 }
 
-/* Gives style to the navigation bar. */
-ul {
+header nav ul {
     list-style-type: none;
 }
 
-li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
+/*This is for the hyperlinks*/
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/* Sets a font size for all <p> elements within the page. */
+/*This sets the body font size*/
+
 p {
     font-size: 16px;
 }
 
-/* Defines style for the footer element. */
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
+/*This is the main photo*/
 
-/* Defines size and style of background image of class meeting. */
-.meeting {
+#hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -93,60 +71,29 @@ footer {
     background-position: center;
 }
 
-/* Defines style for content sections in the middle of the page. */
-.content-middle {
+/*This section changes the side the image is displayed on the cards*/
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*This section affects the blocks for the cards in the main section*/
+
+.content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* Sets height restriction for all img elements in the middle section of the page. */
-.content-middle img {
-    max-height: 200px;
-}
+/*This section applies to the aside*/
 
-/* Defines location and margins of images within the middle section of the page with the id of float-left. */
-#float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-/*  Defines location and margins of images within the middle section of the page with the id of float-right. */
-#float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-/* Styles each section of the page's middle content. */
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Defines style for content sections on the right side of the page. */
-.content-right {
+.aside1 {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -157,25 +104,51 @@ footer {
     background-color: #2589bd;
 }
 
-/* Sets height restriction for all img elements on the right side of the page. */
-.content-right img {
+.benefit {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* Styles each section of the page's right side content. */
-.benefit-lead {
-    margin-bottom: 32px;
+/*This section applies to the three cards in the main section*/
+
+.card {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+.card img {
+    max-height: 200px;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*This section applies to the footer*/
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
 }
